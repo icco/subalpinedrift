@@ -1,4 +1,5 @@
 FROM nginx:alpine
+LABEL org.opencontainers.image.authors="nat@natwelch.com"
 
 EXPOSE 8080
 
