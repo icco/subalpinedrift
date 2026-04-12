@@ -130,3 +130,4 @@ dist
 .pnp.*
 .faircamp_build
 .faircamp_cache
+.DS_Store
