@@ -4,20 +4,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello World - Nginx Docker</title>
+  <meta name="description" content="Sub Alpine Drift — electronic music by Nat Welch.">
+  <title>Sub Alpine Drift</title>
   <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.5;
+      color: #e8e6e3;
+      background: #121318;
+    }
+
+    main {
+      text-align: center;
+      padding: 2rem;
+      max-width: 28rem;
+    }
+
     h1 {
-      font-weight: lighter;
-      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.75rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      margin: 0 0 0.5rem;
+    }
+
+    p {
+      margin: 0 0 2rem;
+      color: #9a9690;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    a {
+      color: #7eb8da;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <h1>
-    Hello World, check it.
-  </h1>
+  <main>
+    <h1>Sub Alpine Drift</h1>
+    <p>Electronic music</p>
+    <nav aria-label="Links">
+      <ul>
+        <li><a href="https://subalpinedrift.bandcamp.com/">Bandcamp</a></li>
+        <li><a href="https://natwelch.com/">natwelch.com</a></li>
+      </ul>
+    </nav>
+  </main>
 </body>
 
 </html>
