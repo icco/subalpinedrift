@@ -17,26 +17,41 @@
       font-family: system-ui, -apple-system, sans-serif;
       line-height: 1.5;
       color: #e8e6e3;
-      background: #121318;
+      background: #0c0d10;
     }
 
     main {
       text-align: center;
       padding: 2rem;
-      max-width: 28rem;
+      max-width: 26rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .photo {
+      width: 14rem;
+      height: 14rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1.75rem;
+      display: block;
+      border: 2px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     }
 
     h1 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       font-weight: 500;
-      letter-spacing: 0.04em;
-      margin: 0 0 0.5rem;
+      letter-spacing: 0.05em;
+      margin: 0 0 0.35rem;
     }
 
     p {
-      margin: 0 0 2rem;
-      color: #9a9690;
-      font-size: 0.95rem;
+      margin: 0 0 1.75rem;
+      color: #7a756f;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     ul {
@@ -44,23 +59,26 @@
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
+      gap: 1.5rem;
+      justify-content: center;
     }
 
     a {
-      color: #7eb8da;
+      color: #9a9690;
       text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
     }
 
     a:hover {
-      text-decoration: underline;
+      color: #e8e6e3;
     }
   </style>
 </head>
 
 <body>
   <main>
+    <img class="photo" src="PXL_20260414_181006912-EDIT.jpg" alt="Sub Alpine Drift — modular synth setup">
     <h1>Sub Alpine Drift</h1>
     <p>Electronic music</p>
     <nav aria-label="Links">
