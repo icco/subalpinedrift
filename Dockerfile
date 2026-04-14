@@ -4,4 +4,5 @@ LABEL org.opencontainers.image.authors="nat@natwelch.com"
 EXPOSE 8080
 
 COPY index.html /usr/share/nginx/html/index.html
+COPY PXL_20260414_181006912-EDIT.jpg /usr/share/nginx/html/PXL_20260414_181006912-EDIT.jpg
 COPY nginx.conf /etc/nginx/conf.d/default.conf

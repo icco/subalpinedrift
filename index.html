@@ -93,7 +93,7 @@
 
 <body>
   <main>
-    <img class="photo" src="PXL_20260414_181006912-EDIT.jpg" alt="Sub Alpine Drift — modular synth setup">
+    <img class="photo" src="PXL_20260414_181006912-EDIT.jpg" alt="A small gray and brown stuffed dog toy sitting on a desk surrounded by modular synthesizer modules, patch cables, and a Monome grid controller, warmly lit from above">
     <h1>Sub Alpine Drift</h1>
     <p>Electronic music</p>
     <nav aria-label="Links">
@@ -103,6 +103,21 @@
       </ul>
     </nav>
   </main>
+  <script type="module">
+    import {onCLS, onINP, onLCP, onFCP, onTTFB} from 'https://unpkg.com/web-vitals@5?module';
+
+    function send(metric) {
+      const body = JSON.stringify(metric);
+      navigator.sendBeacon('https://reportd.natwelch.com/analytics/subalpinedrift', body)
+        || fetch('https://reportd.natwelch.com/analytics/subalpinedrift', {body, method: 'POST', keepalive: true});
+    }
+
+    onCLS(send);
+    onFCP(send);
+    onINP(send);
+    onLCP(send);
+    onTTFB(send);
+  </script>
 </body>
 
 </html>
