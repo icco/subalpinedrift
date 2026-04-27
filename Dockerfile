@@ -1,4 +1,7 @@
 FROM nginx:1.29-alpine
+
+LABEL org.opencontainers.image.source=https://github.com/icco/subalpinedrift
+LABEL org.opencontainers.image.description="ghcr.io/icco/subalpinedrift container image"
 LABEL org.opencontainers.image.authors="nat@natwelch.com"
 
 EXPOSE 8080
