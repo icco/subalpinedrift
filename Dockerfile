@@ -1,4 +1,4 @@
-FROM nginx:1.29-alpine
+FROM nginx:1.31-alpine
 
 LABEL org.opencontainers.image.source=https://github.com/icco/subalpinedrift
 LABEL org.opencontainers.image.description="Landing page for Sub Alpine Drift, the electronic music project by Nat Welch (subalpinedrift.com); a static site served via nginx."
